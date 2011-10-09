@@ -1,0 +1,48 @@
+!!!
+html
+  head
+    title daily.do
+    link(rel='styelsheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Arvo', type="text/css")
+  body.layout
+    div.top.layout
+      div.logo.navShadow
+        h1.logohead daily.do
+        span Do big things in small steps.
+      div.nav.navShadow
+        ul
+          li home
+          li faq
+          li login
+          li contact
+    div.mid.layout
+      div.left
+        !=partial('welcome')
+      div.main!= body
+    div.bottom.layout
+      .left_foot
+        h4 Sitemap
+          ul
+            li home
+            li faq
+            li login
+            li contact
+      .mid_foot
+        h4 About Us
+        p Daily.do is a site dedicated to helping you acheive your goals by providing a clear plan, daily task reminders, and accountability.
+          ul
+            li joe@daily.do
+            li moe@daily.do
+            li aerick@daily.do
+            li johnny@daily.do
+      .right_foot
+        h4 Other Stuff
+          ul
+            li DailyDo LLC
+            li Copyright &copy; 2011, All Rights Reserved
+            li
+              a(href="http://twitter.com/dailydotdo")
+                img(src="http://twitter-badges.s3.amazonaws.com/twitter-a.png", alt="Follow Daily.do on Twitter")
+
+

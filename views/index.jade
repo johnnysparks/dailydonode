@@ -1,0 +1,8 @@
+h1 Suggestion List and Some other thing
+ul.s_list
+	- each suggestion in suggestions
+		li
+			.s_title= suggestion.title
+			.s_vote_count= suggestion.vote_count
+			.s_dec= suggestion.description
+	
